@@ -1,0 +1,21 @@
+# ===============================
+# Bibliotecas necessárias
+# para a aplicação rodar
+# ===============================
+fastapi
+uvicorn[standard]
+sqlalchemy
+psycopg2-binary
+python-dotenv
+pydantic
+pydantic-settings
+google-generativeai
+python-json-logger
+
+# ===============================
+# Bibliotecas necessárias para melhorar
+# a qualidade de código e padronização
+# ===============================
+black    # Formatação automática de código
+flake8   # Linter para verificar padrões PEP8
+isort    # Organização automática de imports
