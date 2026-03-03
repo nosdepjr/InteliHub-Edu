@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 40px 20px;
+  color: white;
+}
+
+/* Container principal */
+.container {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Títulos */
+h1, h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #fbbf24;
+}
+
+/* Card */
+.card {
+  background: #111827;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 40px rgba(251, 191, 36, 0.15);
+}
+
+/* Inputs */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  background-color: #1f2937;
+  color: white;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: #fbbf24;
+  box-shadow: 0 0 8px rgba(251, 191, 36, 0.4);
+}
+
+/* Botões */
+button {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+button.primary {
+  background-color: #22c55e;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #16a34a;
+}
+
+button.secondary {
+  background-color: #fbbf24;
+  color: black;
+}
+
+button.secondary:hover {
+  background-color: #f59e0b;
+}
+
+button.danger {
+  background-color: #ef4444;
+  color: white;
+}
+
+button.danger:hover {
+  background-color: #dc2626;
+}
+
+/* Lista de recursos */
+.resource-card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #374151;
+}
+
+.resource-card h3 {
+  margin-bottom: 8px;
+}
+
+.resource-actions {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Paginação */
+.pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.pagination button {
+  margin: 0 5px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+  gap: 20px;
+}
+
+.primary {
+  min-width: 120px;
+}
