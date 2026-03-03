@@ -19,13 +19,14 @@ Criar uma aplicação moderna que:
 ---
 
 # 🏗️ Arquitetura
+```
 InteliHub-Edu
-│
-├── backend/ → API REST com FastAPI
-├── frontend/ → SPA em React + Vite
+├── backend/        → API REST com FastAPI
+├── frontend/       → SPA em React + Vite
 ├── .env
 ├── docker-compose.yml
 └── README.md
+```
 
 ---
 
