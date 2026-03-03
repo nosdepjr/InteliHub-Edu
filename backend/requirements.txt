@@ -9,7 +9,7 @@ psycopg2-binary
 python-dotenv
 pydantic
 pydantic-settings
-google-generativeai
+google-genai
 python-json-logger
 
 # ===============================

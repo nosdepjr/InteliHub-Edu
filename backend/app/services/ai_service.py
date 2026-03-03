@@ -1,15 +1,15 @@
 import json
 import time
 
-import google.generativeai as genai
+from google import genai
 
 from app.config import GEMINI_API_KEY
 from app.logger import logger
 
-genai.configure(api_key=GEMINI_API_KEY)
+# Cria o client passando a chave
+client = genai.Client(api_key=GEMINI_API_KEY)
 
-model = genai.GenerativeModel("gemini-3-flash-preview")
-
+MODEL_NAME = "gemini-3-flash-preview"
 
 SYSTEM_PROMPT = """
 Você é um assistente pedagógico especializado em educação digital.
@@ -26,6 +26,7 @@ Responda APENAS em JSON no formato:
 "description": "...",
 "tags": ["tag1","tag2","tag3"]
 }
+}
 """
 
 
@@ -34,11 +35,14 @@ def generate_description(title: str, type: str):
     start = time.time()
 
     prompt = f"""
-    Título: {title}
-    Tipo: {type}
-    """
+Título: {title}
+Tipo: {type}
+"""
 
-    response = model.generate_content(SYSTEM_PROMPT + prompt)
+    response = client.models.generate_content(
+        model=MODEL_NAME,
+        contents=SYSTEM_PROMPT + prompt,
+    )
 
     latency = time.time() - start
 
