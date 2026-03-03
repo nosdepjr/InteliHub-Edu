@@ -187,6 +187,6 @@ flake8 .
 
 # 👨‍💻 Autor
 
-## Desenvolvido por Edson Junior
+### Desenvolvido por Edson Júnior
 
-## Projeto criado para avaliação técnica Fullstack.
+### Projeto criado para avaliação técnica Fullstack.
